@@ -1,0 +1,21 @@
+[
+    {
+      "console": "Nintendo Entertainment System",
+      "name": "Super Mario Bros.",
+      "rom_url": "/mathsgames/practice/nes/roms/streetfighter3.nes",
+      "core": "nes"
+    },
+    {
+      "console": "Nintendo Entertainment System",
+      "name": "Sonic the Hedgehog",
+      "rom_url": "https://www.retrogames.cz/play_154-Genesis.php?language=EN",
+      "core": "genesis"
+    },
+    {
+      "console": "Nintendo Entertainment System",
+      "name": "Pokemon FireRed",
+      "rom_url": "https://www.retrogames.cz/play_121-GBA.php?language=EN",
+      "core": "gba"
+    }
+  ]
+  

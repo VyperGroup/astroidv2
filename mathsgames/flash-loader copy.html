@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ruffle Game</title>
+  </head>
+  <body>
+    <script src="./assets/ruffle.js"></script>
+    <script>
+      window.addEventListener("load", function() {
+        const params = new URLSearchParams(window.location.search);
+        const swfUrl = decodeURIComponent(params.get("swf"));
+        const width = parseInt(params.get("width")) || 640;
+        const height = parseInt(params.get("height")) || 480;
+        const ruffle = window.RufflePlayer.newest();
+        ruffle.instance = RufflePlayer.createPlayer({
+          "polyfills": true,
+          "swf": swfUrl,
+          "autoplay": true,
+          "frameRate": 60,
+          "width": width,
+          "height": height,
+        });
+        document.body.appendChild(ruffle.instance);
+      });
+    </script>
+  </body>
+</html>

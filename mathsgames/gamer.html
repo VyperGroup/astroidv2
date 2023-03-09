@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game Launcher</title>
+  </head>
+  <body>
+    <div id="button-container"></div>
+    <div id="game-container"></div>
+
+    <script>
+      // Define the URL of the JSON file
+      const jsonUrl = "games.json";
+
+      // Fetch the JSON data and create buttons for each game
+      fetch(jsonUrl)
+        .then(response => response.json())
+        .then(data => {
+          const buttonContainer = document.getElementById("button-container");
+          data.forEach(game => {
+            const button = document.createElement("button");
+            button.innerText = game.title;
+            button.onclick = () => {
+              if (game.type === "html") {
+                // Redirect to a new HTML file that contains an iframe of the game
+                window.location.href = `html-loader.html?source=${encodeURIComponent(game.source)}`;
+              } else if (game.type === "ruffle") {
+                // Open Ruffle game in a new HTML page
+                window.open(`flash-loader.html?swf=${encodeURIComponent(game.swf)}&width=${game.width}&height=${game.height}`);
+              } else if (game.type === "emulatorjs") {
+                // Open EmulatorJS game in a new HTML page
+                window.open(`test-loader.html?core=${encodeURIComponent(game.core)}&rom=${encodeURIComponent(game.rom)}&width=${game.width}&height=${game.height}`);
+              } else {
+                console.error(`Unsupported game type "${game.type}" for game "${game.title}"`);
+              }
+            };
+            buttonContainer.appendChild(button);
+          });
+        })
+        .catch(error => console.error("Error fetching games:", error));
+    </script>
+  </body>
+</html>
+

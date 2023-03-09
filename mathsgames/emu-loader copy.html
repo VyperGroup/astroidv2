@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emulator Game Buttons</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/mathsgames/assets/emulator/data/loader.js"></script>
+</head>
+<body>
+  <h1>Emulator Game Buttons</h1>
+  <div id="button-container"></div>
+
+  <script>
+    // Fetch the JSON file containing button data
+    fetch('emu.json')
+      .then(response => response.json())
+      .then(data => {
+        // Sort the data by console type
+        data.sort((a, b) => a.console_type.localeCompare(b.console_type));
+        // Iterate over the sorted button data and create buttons
+        data.forEach(button => {
+          const buttonElement = document.createElement('button');
+          buttonElement.textContent = button.name;
+          buttonElement.addEventListener('click', () => {
+            // Construct the URL parameters for the game page
+            const params = new URLSearchParams({
+              rom_url: button.rom_url,
+              core: button.core
+            });
+            // Open the game page in the current tab with the URL parameters
+            window.location.replace(`emu-launcher.html?${params}`);
+          });
+          document.getElementById('button-container').appendChild(buttonElement);
+        });
+      })
+      .catch(error => console.error(error));
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+{
+  "NES": [
+    {
+      "name": "Super Mario Bros.",
+      "rom_url": "https://example.com/nes/super-mario-bros.rom",
+      "core": "fceumm"
+    },
+    {
+      "name": "The Legend of Zelda",
+      "rom_url": "https://example.com/nes/zelda.rom",
+      "core": "fceumm"
+    }
+  ],
+  "Super Nintendo": [
+    {
+      "name": "Super Mario World",
+      "rom_url": "https://example.com/snes/super-mario-world.rom",
+      "core": "snes9x"
+    },
+    {
+      "name": "The Legend of Zelda: A Link to the Past",
+      "rom_url": "https://example.com/snes/zelda-link-to-the-past.rom",
+      "core": "snes9x"
+    }
+  ],
+  "Nintendo 64": [
+    {
+      "name": "Super Mario 64",
+      "rom_url": "https://example.com/n64/super-mario-64.rom",
+      "core": "mupen64plus_next"
+    },
+    {
+      "name": "The Legend of Zelda: Ocarina of Time",
+      "rom_url": "https://example.com/n64/zelda-ocarina-of-time.rom",
+      "core": "mupen64plus_next"
+    }
+  ]
+}
+
+  

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game Launcher</title>
+  </head>
+  <body>
+    <div id="button-container"></div>
+
+    <script>
+      // Define the URL of the JSON file
+      const jsonUrl = "games.json";
+
+      // Fetch the JSON data and create buttons for each game
+      fetch(jsonUrl)
+        .then(response => response.json())
+        .then(data => {
+          const buttonContainer = document.getElementById("button-container");
+          data.forEach(game => {
+            const button = document.createElement("button");
+            button.innerText = game.title;
+            button.onclick = () => {
+              if (game.type === "html") {
+                // Redirect to a new HTML file that contains an iframe of the game
+                window.location.href = `game.html?source=${encodeURIComponent(game.source)}`;
+              } else if (game.type === "ruffle") {
+                createRuffleIframe(game.swf, game.width, game.height);
+              } else if (game.type === "emulatorjs") {
+                createEmulatorjsIframe(game.core, game.rom, game.width, game.height);
+              } else {
+                console.error(`Unsupported game type "${game.type}" for game "${game.title}"`);
+              }
+            };
+            buttonContainer.appendChild(button);
+          });
+        })
+        .catch(error => console.error("Error fetching games:", error));
+
+      function createRuffleIframe(swfUrl, width, height) {
+        // Replace the current document with the Ruffle player
+        const embed = document.createElement("embed");
+        embed.src = "https://cdn.jsdelivr.net/npm/@rufflejs/ruffle@latest/dist/ruffle.js";
+        embed.type = "application/x-shockwave-flash";
+        embed.setAttribute("data-ruffle", "");
+        embed.setAttribute("data-swf", swfUrl);
+        embed.width = width;
+        embed.height = height;
+        document.documentElement.innerHTML = "";
+        document.body.appendChild(embed);
+      }
+
+      function createEmulatorjsIframe(core, romUrl, width, height) {
+        // Replace the current document with the EmulatorJS player
+        const script = document.createElement("script");
+        script.src = "emulatorjs.js";
+        script.onload = function() {
+          const emulator = new Emulator();
+          emulator.loadCore(core, function() {
+            emulator.loadROM(romUrl, function() {
+              emulator.start();
+            });
+          });
+        };
+        document.documentElement.innerHTML = "";
+        document.body.appendChild(script);
+      }
+    </script>
+  </body>
+</html>
+

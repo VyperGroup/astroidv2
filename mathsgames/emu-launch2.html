@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <!--HTML file auto generated using EmulatorJS codehelper-->
+    </head>
+    <body>
+        <div style="width:640px;height:480px;max-width:100%">
+            <div id="game"></div>
+        </div>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const romUrl = urlParams.get('rom_url');
+            const core = urlParams.get('core');
+
+            EJS_player = "#game";
+            EJS_core = core || "nes"; // Default to NES core if core type is not specified
+            EJS_gameName = "h";
+            EJS_color = "#0064ff";
+            EJS_startOnLoaded = true;
+            EJS_pathtodata = "https://rawcdn.githack.com/EmulatorJS/EmulatorJS/main/data/";
+            EJS_gameUrl = romUrl;
+
+            if (!EJS_gameUrl) {
+                console.error('No game ROM specified in URL parameter');
+            }
+
+        </script>
+        <script src="https://rawcdn.githack.com/EmulatorJS/EmulatorJS/main/data/loader.js"></script>
+    </body>
+</html>
