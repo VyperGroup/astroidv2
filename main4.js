@@ -172,7 +172,7 @@ let urlStt=''
 for(let i=0;i<slashN;i++)urlStt+='index.html'
 return urlStt}
 function menuHTML(typ){let urlStt=urlSttGet()
-let links=[['index.htm','Home',0],['algebra/index.html','Algebra',0],['calculus/index.html','Calculus',1],['data/index.html','Data',0],['geometry/index.html','Geometry',0],['measure/index.html','Measure',0],['money/index.html','Money',1],['numbers/index.html','Numbers',0],['physics/index.html','Physics',0],['activity/index.html','Activities',1],['definitions/index.html','Dictionary',0],['games/index.html','Games',0],['puzzles/index.html','Puzzles',0],['worksheets/index.php','Worksheets',1],]
+let links=[['worksheets/index.html','Home',0],['worksheets/index.html','Algebra',0],['worksheets/index.html','Calculus',1],['worksheets/index.html','Data',0],['worksheets/index.html','Geometry',0],['worksheets/index.html','Measure',0],['worksheets/index.html','Money',1],['worksheets/index.html','Numbers',0],['worksheets/index.html','Physics',0],['worksheets/index.html','Activities',1],['worksheets/index.html','Dictionary',0],['worksheets/index.html','Games',0],['worksheets/index.html','Puzzles',0],['worksheets/index.php','Worksheets',1],]
 let s=''
 let linkLen=links.length
 let i
@@ -322,7 +322,7 @@ s+='<b><a href="'+urlStt+'Privacy.htm">Privacy</a></b>'
 s+='</div>'
 return s}
 function footer2HTML(){let urlStt=urlSttGet()
-let links=[['<div style="margin:5px 0 10px 5px;"><a href="'+urlStt+'index.htm"><img src="'+urlStt+'images/style/logo.svg" alt="logo"></a></div>','',1],['index.htm','Home',0],['links/index.html','Index',0],['aboutmathsisfun.html','About Us',0],['contact.php','Contact Us',0],['Privacy.htm','Privacy',0],['<div class="footHdr">Subjects</div> ','',1],['algebra/index.html','Algebra',0],['algebra/index-2.html','Algebra 2',0],['calculus/index.html','Calculus',0],['data/index.html','Data',0],['geometry/plane-geometry.html','Plane Geometry',0],['geometry/solid-geometry.html','Solid Geometry',0],['measure/index.html','Measure',0],['money/index.html','Money',0],['numbers/index.html','Numbers',0],['physics/index.html','Physics',0],['<div class="footHdr">Other</div> ','',1],['activity/index.html','Activities',0],['definitions/index.html','Dictionary',0],['games/index.html','Games',0],['puzzles/index.html','Puzzles',0],['worksheets/index.php','Worksheets',0],]
+let links=[['<div style="margin:5px 0 10px 5px;"><a href="'+urlStt+'index.htm"><img src="'+urlStt+'images/style/logo.svg" alt="logo"></a></div>','',1],['index.htm','Home',0],['links/index.html','Index',0],['aboutmathsisfun.html','About Us',0],['contact.php','Contact Us',0],['Privacy.htm','Privacy',0],['<div class="footHdr">Subjects</div> ','',1],['algebra/index.html','Algebra',0],['algebra/index-2.html','Algebra 2',0],['calculus/index.html','Calculus',0],['data/index.html','Data',0],['geometry/plane-geometry.html','Plane Geometry',0],['geometry/solid-geometry.html','Solid Geometry',0],['measure/index.html','Measure',0],['money/index.html','Money',0],['numbers/index.html','Numbers',0],['physics/index.html','Physics',0],['<div class="footHdr">Other</div> ','',1],['activity/index.html','Activities',0],['definitions/index.html','Dictionary',0],['games/index.html','Games',0],['worksheets/index.html','Puzzles',0],['worksheets/index.html','Worksheets',0],]
 let s=''
 s+='<div class="foot">'
 for(let i=0;i<links.length;i++){let link=links[i]
