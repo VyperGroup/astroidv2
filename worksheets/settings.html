@@ -1,78 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta content="Math Is Fun" property="og:title">
-<meta content="Math explained in easy language, plus puzzles, games, games and an illustrated dictionary. For K-12 kids, teachers and parents." property="og:description">
-<meta content="#ffffff" data-react-helmet="true" name="theme-color">
-<meta property="og:image" content="assets/images/logo.png">
-<title>Math Is Fun</title>
-<link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
-<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/rawline">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&amp;display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
-<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-<link rel="stylesheet" href="assets/reset.css">
-<link rel="stylesheet" href="assets/index.css">
-<link rel="stylesheet" href="assets/button.css">
+	<title>Site Settings</title>
+	<!-- Add your default favicon here -->
+	<link rel="icon" type="image/png" href="./assets/favicon/logo.png">
+    <style>
+        h1{
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: -50px; 
+            text-align: center;
+            display: inline-block;
+        }
+                body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            position: relative; /* Added */
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            z-index: 0;
+            pointer-events: none;
+        } 
+
+        #alt-particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(121, 0, 177);
+            z-index: 0;
+            background-image: url('assets/noparticles.png');
+            pointer-events: none;
+            background-size: cover;
+        }
+
+        .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.container a {
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container a img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.container
+
+
+        #toggle { /* Added */
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: 999;
+        }
+        button {
+    background-color: #7843E6;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+       button:hover {
+    border-radius: 4px;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background: black;
+}
+html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+        body h1{
+        text-align: center;
+        }
+
+		.container form {
+            margin-top: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+        label{
+            color: white;
+        }
+    </style>
 </head>
 <body>
-<div class="wrapper">
-<nav class="navbar">
-<div class="navbar__container">
-<div class="navbar__branding">
-<a href="index.html">
-<span>Astroid Lite</span>
-</a>
+    <div id="particles-js"></div>
+    <div class="container">
+        <center>
+            <h1 style="text-align: center;">Settings</h1>
+        </center> 
+	<form id="settings-form">
+		<label for="favicon">Favicon:</label>
+		<select id="favicon" name="favicon">
+			<option value="./assets/favicon/logo.png">Astroid Logo</option>
+			<option value="./assets/favicon/gmail-16-16.png">Gmail Logo</option>
+			<!-- Add more options for additional favicons -->
+		</select>
+		<br>
+		<label for="site-name">Site Name:</label>
+		<input type="text" id="site-name" name="site-name" value="My Site">
+		<br>
+		<button type="submit">Save Changes</button>
+	</form>
 </div>
-<div class="navbar__items navbar__items--mobile">
-<a href="#" class="navbar__item">
-<label for="input-navbar">
-<i class="fas fa-bars"></i>
-</label>
-</a>
-</div>
-<input type="checkbox" id="input-navbar" style="display: none;">
-<div class="navbar__items">
-<a href="index.html" class="navbar__item">Home</a>
-<a href="practice/index.html" class="navbar__item">Emulators</a>
-<a href="games/music.html" class="navbar__item">Music Player</a>
-<a href="https://vyper.group" class="navbar__item">Vyper Group</a>
-<a href="legal.html" class="navbar__item">Legal</a>
-<a href="settings.html" class="navbar__item">Settings</a>
-<a href="../../../index.html" class="navbar__item" accesskey="p">Panic</a>
-<a href="https://discord.gg/9sUDHyGQfC" class="navbar__item navbar__item--highlighted">Discord</a>
-</div>
-</div>
-</nav>
-<main class="main">
-<div class="main__container">
-<h2 class="heading">Settings</h2>
-<div class="block">
-<div class="block__body">
-   <center><h1>Enter Site Title</h1>
-    <p class="console-input"> <input id="userinput" type="url" pattern="" placeholder="Enter a title here" autocomplete="on" autofocus /></p>
-    <button onclick="changeTabTitle();" class="button">Set Title</button><br>
-    <h1>Enter Site Icon (Not Currently Working)</h1>
-        <p class="console-input"> <input id="userinput" type="url" pattern="https://.*" placeholder="Enter an Icon URL here" autocomplete="on" autofocus /></p>
-        <button onclick="changeTabIcon();" class="button">Set Icon</button>
-        <p>Set a Username (Beta)</p>
-        <input id="username" type="text" placeholder="Text"><br>
-        <button onclick="returnText()">Submit</button></center>
-</main>
-</div>
-<footer class="footer" id="footer">
-<div class="footer__container">
-<div class="footer__content">
-<div class="footer__copyright">
-<center>© Vyper Group </center>
-</footer>
-<div>
-    <script src="main.js"></script>
-    <script src="cloak.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="api/newloader.js"></script>
+    <script src="./assets/particles/js/particles.js"></script>
+    <script src="./assets/particles/js/app.js"></script>
+    <script src="./assets/particles/js/particles.min.js"></script>
 </body>
 </html>

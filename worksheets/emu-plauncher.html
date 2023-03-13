@@ -39,12 +39,13 @@
 <input type="checkbox" id="input-navbar" style="display: none;">
 <div class="navbar__items">
 <a href="index.html" class="navbar__item">Home</a>
+<a href="index.html" class="navbar__item">HTML / Flash</a>
 <a href="practice/index.html" class="navbar__item">Emulators</a>
 <a href="games/music.html" class="navbar__item">Music Player</a>
 <a href="https://vyper.group" class="navbar__item">Vyper Group</a>
 <a href="legal.html" class="navbar__item">Legal</a>
 <a href="settings.html" class="navbar__item">Settings</a>
-<a href="../../../index.html" class="navbar__item" accesskey="p">Panic</a>
+<a href="../index.html" class="navbar__item" accesskey="p">Panic</a>
 <a href="https://discord.gg/9sUDHyGQfC" class="navbar__item navbar__item--highlighted">Discord</a>
 </div>
 </div>
@@ -62,8 +63,9 @@
     EJS_gameName = "h";
     EJS_color = "#0064ff";
     EJS_startOnLoaded = false;
-    EJS_pathtodata = "/mathsgames/assets/emulator/data/";
+    EJS_pathtodata = "./assets/emulator/data/";
     EJS_gameUrl = romUrl;
+    EJS_biosUrl = 'assets/bios/scph5501.bin';
     
 
     if (!EJS_gameUrl) {
@@ -71,7 +73,7 @@
     }
 
 </script>
-<script src="/mathsgames/assets/emulator/data/loader.js"></script>
+<script src="./assets/emulator/data/loader.js"></script>
 </center>
 </div>
 </body>

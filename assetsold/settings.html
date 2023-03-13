@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script src="main.js"></script>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,34 +47,32 @@
 <a href="https://discord.gg/9sUDHyGQfC" class="navbar__item navbar__item--highlighted">Discord</a>
 </div>
 </div>
-<div id="game-container"></div>
-<center>
-    <div style="width:1200px;height:700px;max-width:100%;border-radius:8px;">
-<div id="game"></div>
-    <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const romUrl = urlParams.get('rom_url');
-    const core = urlParams.get('core');
-
-    EJS_player = "#game";
-    EJS_core = core || "nes"; // Default to NES core if core type is not specified
-    EJS_gameName = "h";
-    EJS_color = "#0064ff";
-    EJS_startOnLoaded = false;
-    EJS_pathtodata = "/mathsgames/assets/emulator/data/";
-    EJS_gameUrl = romUrl;
-    
-
-    if (!EJS_gameUrl) {
-        console.error('No game ROM specified.');
-    }
-
-</script>
-<script src="/mathsgames/assets/emulator/data/loader.js"></script>
-</center>
+</nav>
+<main class="main">
+<div class="main__container">
+<h2 class="heading">Settings</h2>
+<div class="block">
+<div class="block__body">
+   <center><h1>Enter Site Title</h1>
+    <p class="console-input"> <input id="userinput" type="url" pattern="" placeholder="Enter a title here" autocomplete="on" autofocus /></p>
+    <button onclick="changeTabTitle();" class="button">Set Title</button><br>
+    <h1>Enter Site Icon (Not Currently Working)</h1>
+        <p class="console-input"> <input id="userinput" type="url" pattern="https://.*" placeholder="Enter an Icon URL here" autocomplete="on" autofocus /></p>
+        <button onclick="changeTabIcon();" class="button">Set Icon</button>
+        <p>Set a Username (Beta)</p>
+        <input id="username" type="text" placeholder="Text"><br>
+        <button onclick="returnText()">Submit</button></center>
+</main>
 </div>
-</body>
-</section>
+<footer class="footer" id="footer">
+<div class="footer__container">
+<div class="footer__content">
+<div class="footer__copyright">
+<center>© Vyper Group </center>
+</footer>
+<div>
+    <script src="main.js"></script>
+    <script src="cloak.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
-

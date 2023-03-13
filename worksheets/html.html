@@ -48,34 +48,66 @@
 <a href="https://discord.gg/9sUDHyGQfC" class="navbar__item navbar__item--highlighted">Discord</a>
 </div>
 </div>
-<div id="game-container"></div>
-<center>
-    <div style="width:1200px;height:700px;max-width:100%;border-radius:8px;">
-<div id="game"></div>
+</nav>
+<main class="main">
+<div class="main__container">
+<h2 class="heading">Worksheets</h2>
+<div class="block">
+<div class="block__body">
+    <center><input type="text" id="search-input" placeholder="Search..."></center>
+    <div id="button-container"></div>
     <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const romUrl = urlParams.get('rom_url');
-    const core = urlParams.get('core');
+      const jsonUrl = './api/db.json';
 
-    EJS_player = "#game";
-    EJS_core = core || "nes"; // Default to NES core if core type is not specified
-    EJS_gameName = "h";
-    EJS_color = "#0064ff";
-    EJS_startOnLoaded = false;
-    EJS_pathtodata = "/mathsgames/assets/emulator/data/";
-    EJS_gameUrl = romUrl;
-    
+      fetch(jsonUrl)
+        .then(response => response.json())
+        .then(data => {
+          data.sort((a, b) => a.title.localeCompare(b.title));
 
-    if (!EJS_gameUrl) {
-        console.error('No game ROM specified.');
-    }
+          const buttonContainer = document.getElementById('button-container');
+          const searchInput = document.getElementById('search-input');
+          const renderButtons = (games) => {
+            buttonContainer.innerHTML = '';
+            games.forEach(game => {
+              const button = document.createElement('button');
+              button.innerText = game.title;
+              button.onclick = () => {
+                if (game.type === 'html') {
+                  window.location.href = `html-loader.html?source=${encodeURIComponent(game.source)}`;
+                } else if (game.type === 'ruffle') {
+                  window.location.href = `flash-loader.html?swf=${encodeURIComponent(game.swf)}&width=${game.width}&height=${game.height}`;
+                } else if (game.type === 'emulatorjs') {
+                  window.open(`test-loader.html?core=${encodeURIComponent(game.core)}&rom=${encodeURIComponent(game.rom)}&width=${game.width}&height=${game.height}`);
+                } else {
+                  console.error(`Unsupported game type "${game.type}" for game "${game.title}"`);
+                }
+              };
+              buttonContainer.appendChild(button);
+            });
+          };
 
-</script>
-<script src="/mathsgames/assets/emulator/data/loader.js"></script>
-</center>
+          const filterGames = (query) => {
+            const filteredGames = data.filter(game => game.title.toLowerCase().includes(query.toLowerCase()));
+            renderButtons(filteredGames);
+          };
+
+          searchInput.addEventListener('input', event => {
+            const query = event.target.value;
+            filterGames(query);
+          });
+
+          renderButtons(data);
+        })
+        .catch(error => console.error('Error fetching games:', error));
+    </script>
+</main>
 </div>
-</body>
-</section>
+<footer class="footer" id="footer">
+<div class="footer__container">
+<div class="footer__content">
+<div class="footer__copyright">
+<center>© Vyper Group </center>
+</footer>
+<div>
 </body>
 </html>
-

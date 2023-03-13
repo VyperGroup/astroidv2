@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site Settings</title>
+	<!-- Add your default favicon here -->
+	<link rel="icon" type="image/png" href="default-favicon.png">
+    <style>
+		/* Add styles for the favicon dropdown */
+		#favicon {
+			padding-left: 24px; /* Add left padding for the background image */
+			background-color: #fff; /* Set a background color to show behind the image */
+			background-repeat: no-repeat; /* Don't repeat the image */
+			background-position: 4px center; /* Position the image to the left of the option text */
+			-webkit-appearance: none; /* Remove the default styling for the dropdown */
+			-moz-appearance: none;
+			appearance: none;
+			border: 1px solid #ccc; /* Add a border to the dropdown */
+			border-radius: 4px; /* Add border radius to the dropdown */
+			font-size: 16px; /* Set a font size */
+			height: 32px; /* Set a height */
+			width: 200px; /* Set a width */
+		}
+
+		/* Add styles for each option in the dropdown */
+		#favicon option {
+            color: #1e1e1e;
+			padding-left: 20px; /* Add left padding to the option text */
+			background-repeat: no-repeat; /* Don't repeat the background image */
+			background-position: 0px center; /* Position the background image to the left of the option text */
+		}
+
+		/* Add background images for each option in the dropdown */
+		#favicon option[value="assets/logo.png"] {
+			background-image: url("assets/logo.png");
+		}
+		#favicon option[value="assets/icon/gmail-16-16.png"] {
+			background-image: url("assets/icon/gmail-16-16.png");
+		}
+		#favicon option[value="assets/icon/none-256-256.png"] {
+			background-image: url("assets/icon/none-256-256.png");
+		}
+		/* Add more styles and background images for additional options */
+        body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  color: #fff;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #222;
+  color: #fff;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 30px;
+  background-image: url('dropdown.png');
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #7e57c2;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #673ab7;
+}
+
+	</style>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                overflow: hidden;
+                position: relative; /* Added */
+            }
+    
+            #particles-js {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                z-index: 0;
+                pointer-events: none;
+            } 
+    
+            #alt-particles-js {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(121, 0, 177);
+                z-index: 0;
+                background-image: url('assets/noparticles.png');
+                pointer-events: none;
+                background-size: cover;
+            }
+    
+            .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+    
+    .container a {
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .container a img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    
+            #toggle { /* Added */
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                z-index: 999;
+            }
+            button {
+        background-color: #7843E6;
+        border: none;
+        color: white;
+        padding: 8px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+           button:hover {
+        border-radius: 4px;
+        color: white;
+        padding: 8px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background: black;
+    }
+        </style>
+            <link rel="stylesheet" media="screen" href="./assets/particles/css/style.css">
+</head>
+<body class="">
+    <div id="particles-js"></div>
+    <div class="container">
+	<h1>Site Settings</h1>
+	<p>Select your preferred favicon and site name:</p>
+	<form id="settings-form">
+		<label for="favicon">Favicon:</label>
+		<select id="favicon" name="favicon">
+			<option value="assets/logo.png">Astroid Logo</option>
+			<option value="assets/icon/gmail-16-16.png">Gmail Logo</option>
+			<option value="assets/icon/none-256-256.png"></option>
+			<!-- Add more options for additional favicons -->
+		</select>
+		<br>
+		<label for="site-name">Site Name:</label>
+		<input type="text" id="site-name" name="site-name" value="My Site">
+		<br>
+		<button type="submit">Save Changes</button>
+	</form>
+    </div>
+</div>
+
+	<script src="api/loader.js"></script>
+    <script src="./assets/particles/js/particles.js"></script>
+    <script src="./assets/particles/js/app.js"></script>
+    <script src="./assets/particles/js/particles.min.js"></script>
+    <script>
+    var currentParticles = "particles-js";
+    
+   function toggleParticles() {
+    var oldParticles = document.getElementById(currentParticles);
+    var newParticlesId = currentParticles === "particles-js" ? "alt-particles-js" : "particles-js";
+    var newParticles = document.createElement("div");
+    newParticles.setAttribute("id", newParticlesId);
+    newParticles.classList.add("alt-particles-js");
+    oldParticles.parentNode.replaceChild(newParticles, oldParticles);
+    currentParticles = newParticlesId;
+    if (currentParticles === "particles-js") {
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    }
+}
+
+    </script>
+</body>
+</html>
