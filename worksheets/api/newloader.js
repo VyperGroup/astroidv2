@@ -5,7 +5,7 @@ const siteNameInput = form.elements['site-name'];
 
 // Get the saved settings, or set default values
 const savedSettings = JSON.parse(localStorage.getItem('site-settings')) || {};
-const defaultFavicon = '../assets/favicon/logo.png';
+const defaultFavicon = '/worksheets/assets/favicon/logo.png';
 const defaultSiteName = 'Astroid';
 
 // Set the default values

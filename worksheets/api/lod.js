@@ -1,6 +1,6 @@
 		// Get the saved settings, or set default values
 		const savedSettings = JSON.parse(localStorage.getItem('site-settings')) || {};
-		const defaultFavicon = '../assets/favicon/logo.png';
+		const defaultFavicon = '/worksheets/assets/favicon/logo.png';
 		const defaultSiteName = 'Astroid';
 
 		// Apply the settings site-wide
