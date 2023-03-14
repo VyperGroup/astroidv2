@@ -3246,7 +3246,7 @@
   "tags": "",
   "route": "2048",
   "source": "main/2048/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3257,7 +3257,7 @@
   "tags": "",
   "route": "agario-minigame",
   "source": "main/agario-minigame/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3268,7 +3268,7 @@
   "tags": "",
   "route": "astray",
   "source": "main/astray/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3279,7 +3279,7 @@
   "tags": "",
   "route": "break-lock",
   "source": "main/breaklock/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3290,7 +3290,7 @@
   "tags": "",
   "route": "chroma",
   "source": "main/chroma/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3301,7 +3301,7 @@
   "tags": "",
   "route": "cookie-clicker",
   "source": "main/cookie/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3312,7 +3312,7 @@
   "tags": "",
   "route": "cube-field",
   "source": "main/cubefield/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3323,7 +3323,7 @@
   "tags": "",
   "route": "dinosaur",
   "source": "main/dinosaur/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3334,7 +3334,7 @@
   "tags": "",
   "route": "doodle-jump",
   "source": "main/doodle-jump/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3345,7 +3345,7 @@
   "tags": "",
   "route": "drift",
   "source": "main/drift/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": false
@@ -3356,7 +3356,7 @@
   "tags": "",
   "route": "ducklife-1-html",
   "source": "main/ducklife/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3367,7 +3367,7 @@
   "tags": "",
   "route": "duck-life-2-html",
   "source": "main/ducklife2/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": false
@@ -3378,7 +3378,7 @@
   "tags": "",
   "route": "duck-life-3-html",
   "source": "main/ducklife3/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3389,7 +3389,7 @@
   "tags": "",
   "route": "duck-life-4-html",
   "source": "main/ducklife4/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3400,7 +3400,7 @@
   "tags": "",
   "route": "fireboy-and-watergirl-forest-temple",
   "source": "main/fireboy-and-watergirl-forest-temple/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3411,7 +3411,7 @@
   "tags": "",
   "route": "flappy-2048",
   "source": "main/flappy-2048/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3422,7 +3422,7 @@
   "tags": "",
   "route": "flappy-bird",
   "source": "main/flappybird/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": false
@@ -3433,7 +3433,7 @@
   "tags": "",
   "route": "friendly-fire",
   "source": "main/friendlyfire/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3444,7 +3444,7 @@
   "tags": "",
   "route": "geometry-dash",
   "source": "main/geometry/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3455,7 +3455,7 @@
   "tags": "",
   "route": "gopher-kart",
   "source": "main/gopher-kart/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3466,7 +3466,7 @@
   "tags": "",
   "route": "hexgl",
   "source": "main/hexgl/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3477,7 +3477,7 @@
   "tags": "",
   "route": "hextris",
   "source": "main/hextris/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3488,7 +3488,7 @@
   "tags": "",
   "route": "madalin-cars-multiplayer",
   "source": "main/madalin-cars-multiplayer/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3499,7 +3499,7 @@
   "tags": "",
   "route": "mc-classic",
   "source": "main/mc-classic/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1080px",
   "height": "720px",
   "listed": true
@@ -3510,7 +3510,7 @@
   "tags": "",
   "route": "microsoft-flight-simulator",
   "source": "main/microsoft-flight-simulator/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3521,7 +3521,7 @@
   "tags": "",
   "route": "muffin-knight",
   "source": "main/muffin-knight/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": false
@@ -3532,7 +3532,7 @@
   "tags": "",
   "route": "pacman-html",
   "source": "main/pacman/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3543,7 +3543,7 @@
   "tags": "",
   "route": "radius-raid",
   "source": "main/radius-raid/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3554,7 +3554,7 @@
   "tags": "",
   "route": "retro-bowl",
   "source": "main/retro-bowl/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3565,7 +3565,7 @@
   "tags": "",
   "route": "ritz",
   "source": "main/ritz/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3576,7 +3576,7 @@
   "tags": "",
   "route": "run-3-html",
   "source": "main/run3/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": false
@@ -3587,7 +3587,7 @@
   "tags": "",
   "route": "slope",
   "source": "main/slope/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3598,7 +3598,7 @@
   "tags": "",
   "route": "sm64",
   "source": "main/sm64/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3609,7 +3609,7 @@
   "tags": "",
   "route": "space-invaders",
   "source": "main/spaceinvaders/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3620,7 +3620,7 @@
   "tags": "",
   "route": "tank-trouble",
   "source": "main/tanktrouble/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": false
@@ -3631,7 +3631,7 @@
   "tags": "",
   "route": "vex-3",
   "source": "main/vex3/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3642,7 +3642,7 @@
   "tags": "",
   "route": "vex-4",
   "source": "main/vex4/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3653,7 +3653,7 @@
   "tags": "",
   "route": "vex-5",
   "source": "main/vex5/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -3664,7 +3664,7 @@
   "tags": "",
   "route": "rolling-sky",
   "source": "main/webgl-rollingsky/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -4643,7 +4643,7 @@
   "tags": "",
   "route": "earthbound",
   "source": "/emulator/snes/earthbound.smc",
-  "gameType": "snes",
+  "type": "snes",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5633,7 +5633,7 @@
   "tags": "",
   "route": "moto-x3m",
   "source": "main/moto-x3m/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5644,7 +5644,7 @@
   "tags": "",
   "route": "moto-x3m-winter",
   "source": "main/moto-x3m-winter/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5655,7 +5655,7 @@
   "tags": "",
   "route": "moto-x3m-spooky-land",
   "source": "main/moto-x3m-spooky-land/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5666,7 +5666,7 @@
   "tags": "",
   "route": "moto-x3m-pool-party",
   "source": "main/moto-x3m-pool-party/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5677,7 +5677,7 @@
   "tags": "",
   "route": "friday-night-funkin-week-6",
   "source": "main/friday-night-funkin--week-6/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5688,7 +5688,7 @@
   "tags": "",
   "route": "friday-night-funkin-vs-ex",
   "source": "main/friday-night-funkin--vs-ex/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5699,7 +5699,7 @@
   "tags": "",
   "route": "hill-racing",
   "source": "main/hill-racing/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5710,7 +5710,7 @@
   "tags": "",
   "route": "running-bot-xmas-gifts",
   "source": "main/running-bot-xmas-gifts/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5721,7 +5721,7 @@
   "tags": "",
   "route": "russian-taz-magmes",
   "source": "main/russian-taz-magmes/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5732,7 +5732,7 @@
   "tags": "",
   "route": "slope-2",
   "source": "main/slope-2/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5743,7 +5743,7 @@
   "tags": "",
   "route": "game-inside-a-game",
   "source": "main/game-inside-a-game/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5754,7 +5754,7 @@
   "tags": "",
   "route": "zombotron",
   "source": "main/zombotron/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5765,7 +5765,7 @@
   "tags": "",
   "route": "zombotron-2",
   "source": "main/zombotron-2/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5776,7 +5776,7 @@
   "tags": "",
   "route": "zombotron-2-time-machine",
   "source": "main/zombotron-2-time-machine/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5787,7 +5787,7 @@
   "tags": "",
   "route": "donut-boy",
   "source": "main/donut-boy/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5809,7 +5809,7 @@
   "tags": "",
   "route": "a-dance-of-fire-and-ice",
   "source": "main/a-dance-of-fire-and-ice/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5820,7 +5820,7 @@
   "tags": "",
   "route": "superhot",
   "source": "main/superhot/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5831,7 +5831,7 @@
   "tags": "",
   "route": "wordle",
   "source": "main/wordle/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5842,7 +5842,7 @@
   "tags": "",
   "route": "getaway-shootout",
   "source": "main/getaway-shootout/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5853,7 +5853,7 @@
   "tags": "",
   "route": "google-solitaire",
   "source": "main/google-solitaire/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5864,7 +5864,7 @@
   "tags": "",
   "route": "rooftop-snipers",
   "source": "main/rooftop-snipers/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5875,7 +5875,7 @@
   "tags": "",
   "route": "tube-jumpers",
   "source": "main/tube-jumpers/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5886,7 +5886,7 @@
   "tags": "",
   "route": "super-mario-bros",
   "source": "/emulator/nes/smb.nes",
-  "gameType": "nes",
+  "type": "nes",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5897,7 +5897,7 @@
   "tags": "",
   "route": "a-dark-room",
   "source": "main/a-dark-room/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5908,7 +5908,7 @@
   "tags": "",
   "route": "align-4",
   "source": "main/align-4/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5919,7 +5919,7 @@
   "tags": "",
   "route": "colorun",
   "source": "main/colorun/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5930,7 +5930,7 @@
   "tags": "",
   "route": "drift-hunters",
   "source": "main/drift-hunters/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5941,7 +5941,7 @@
   "tags": "",
   "route": "economical",
   "source": "main/economical/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5952,7 +5952,7 @@
   "tags": "",
   "route": "economical-2",
   "source": "main/economical2/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5963,7 +5963,7 @@
   "tags": "",
   "route": "geometry-dash-remastered",
   "source": "main/geometry-dash-remastered/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5974,7 +5974,7 @@
   "tags": "",
   "route": "google-snake",
   "source": "main/google-snake",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5985,7 +5985,7 @@
   "tags": "Created in 2011, Hacker Typer arose from a simple desire to look like the stereotypical hacker in movies and pop culture. Since that time, it has brought smiles to millions of people across the globe. Plus, many of you have temporarily transformed into hackers yourselves, all from a few clicks on the keyboard (and some programming magic behind the scenes!).",
   "route": "hacker-typer",
   "source": "main/hacker-typer/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -5996,7 +5996,7 @@
   "tags": "",
   "route": "madalin-stunt-cars-2",
   "source": "main/madalin-stunt-cars-2/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6040,7 +6040,7 @@
   "tags": "",
   "route": "tunnel-rush",
   "source": "main/tunnelrush/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6051,7 +6051,7 @@
   "tags": "",
   "route": "basket-random",
   "source": "main/basket-random/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6062,7 +6062,7 @@
   "tags": "",
   "route": "mario-cart-64",
   "source": "/emulator/n64/mariokart64.z64",
-  "gameType": "n64",
+  "type": "n64",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6073,7 +6073,7 @@
   "tags": "",
   "route": "pokemon-blue",
   "source": "/emulator/gb/pokemon-blue.gb",
-  "gameType": "gb",
+  "type": "gb",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6084,7 +6084,7 @@
   "tags": "",
   "route": "pokemon-crystal",
   "source": "/emulator/gb/pokemon-crystal.gbc",
-  "gameType": "gb",
+  "type": "gb",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6095,7 +6095,7 @@
   "tags": "",
   "route": "pokemon-gold",
   "source": "/emulator/gb/pokemon-gold.gbc",
-  "gameType": "gb",
+  "type": "gb",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6106,7 +6106,7 @@
   "tags": "",
   "route": "pokemon-red",
   "source": "/emulator/gb/pokemon-red.gb",
-  "gameType": "gb",
+  "type": "gb",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6117,7 +6117,7 @@
   "tags": "",
   "route": "pokemon-silver",
   "source": "/emulator/gb/pokemon-silver.gbc",
-  "gameType": "gb",
+  "type": "gb",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6128,7 +6128,7 @@
   "tags": "",
   "route": "pokemon-emerald",
   "source": "/emulator/gba/pokemon-emerald.gba",
-  "gameType": "gba",
+  "type": "gba",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6139,7 +6139,7 @@
   "tags": "",
   "route": "pokemon-fire-red",
   "source": "/emulator/gba/pokemon-firered.gba",
-  "gameType": "gba",
+  "type": "gba",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6150,7 +6150,7 @@
   "tags": "",
   "route": "pokemon-leaf-green",
   "source": "/emulator/gba/pokemon-leafgreen.gba",
-  "gameType": "gba",
+  "type": "gba",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6161,7 +6161,7 @@
   "tags": "",
   "route": "pokemon-ruby",
   "source": "/emulator/gba/pokemon-ruby.gba",
-  "gameType": "gba",
+  "type": "gba",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6172,7 +6172,7 @@
   "tags": "",
   "route": "pokemon-sapphire",
   "source": "/emulator/gba/pokemon-sapphire.gba",
-  "gameType": "gba",
+  "type": "gba",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6183,7 +6183,7 @@
   "tags": "",
   "route": "basketball-stars",
   "source": "main/basketball-stars/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6194,7 +6194,7 @@
   "tags": "",
   "route": "minesweeper",
   "source": "main/minesweeper/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6205,7 +6205,7 @@
   "tags": "",
   "route": "sans-fight",
   "source": "main/sans-fight/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6216,7 +6216,7 @@
   "tags": "",
   "route": "there-is-no-game",
   "source": "main/there-is-no-game/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6227,7 +6227,7 @@
   "tags": "",
   "route": "unfair-dyne",
   "source": "main/unfair-dyne/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6238,7 +6238,7 @@
   "tags": "",
   "route": "volley-gosh",
   "source": "main/volleygosh/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6249,7 +6249,7 @@
   "tags": "",
   "route": "nb-jam",
   "source": "/emulator/snes/nbajam.sfc",
-  "gameType": "snes",
+  "type": "snes",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6260,7 +6260,7 @@
   "tags": "",
   "route": "nba-jam-tournament-edition",
   "source": "/emulator/snes/nbajamtournamentedition.smc",
-  "gameType": "snes",
+  "type": "snes",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6271,7 +6271,7 @@
   "tags": "",
   "route": "nba-jam-2k20",
   "source": "/emulator/snes/nbajam2k20.smc",
-  "gameType": "snes",
+  "type": "snes",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6282,7 +6282,7 @@
   "tags": "",
   "route": "donkey-kong-country",
   "source": "/emulator/snes/dkc.sfc",
-  "gameType": "snes",
+  "type": "snes",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6293,7 +6293,7 @@
   "tags": "",
   "route": "super-mario-allstars--super-mario-world",
   "source": "/emulator/snes/smasmw.smc",
-  "gameType": "snes",
+  "type": "snes",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6304,7 +6304,7 @@
   "tags": "",
   "route": "street-fighter-2",
   "source": "/emulator/snes/sf2.sfc",
-  "gameType": "snes",
+  "type": "snes",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6315,7 +6315,7 @@
   "tags": "",
   "route": "sonic-1",
   "source": "/emulator/segaMD/sonic1.smd",
-  "gameType": "segaMD",
+  "type": "segaMD",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6326,7 +6326,7 @@
   "tags": "",
   "route": "sonic-2",
   "source": "/emulator/segaMD/sonic2.smd",
-  "gameType": "segaMD",
+  "type": "segaMD",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6337,7 +6337,7 @@
   "tags": "",
   "route": "sonic-3--knuckles",
   "source": "/emulator/segaMD/sonic3knuckles.smd",
-  "gameType": "segaMD",
+  "type": "segaMD",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6392,7 +6392,7 @@
   "tags": "",
   "route": "soccer-random",
   "source": "main/soccer-random/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6403,7 +6403,7 @@
   "tags": "",
   "route": "volley-random",
   "source": "main/volley-random/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6414,7 +6414,7 @@
   "tags": "",
   "route": "boxing-random",
   "source": "main/boxing-random/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6436,7 +6436,7 @@
   "tags": "",
   "route": "mind-games-for-2-player",
   "source": "main/mind-games-for-2-player/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6447,7 +6447,7 @@
   "tags": "",
   "route": "uno",
   "source": "main/uno/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6458,7 +6458,7 @@
   "tags": "",
   "route": "flakboy",
   "source": "main/flakboy/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6470,7 +6470,7 @@
   "tags": "",
   "route": "gun-knight",
   "source": "main/gun-knight/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
@@ -6481,7 +6481,7 @@
   "tags": "",
   "route": "ludo-online",
   "source": "main/ludo-online/index.html",
-  "gameType": "html",
+  "type": "html",
   "width": "1000px",
   "height": "625px",
   "listed": true
