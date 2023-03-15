@@ -766,6 +766,17 @@
   "listed": true
 },
 {
+  "title": "Rocket League",
+  "description": "TBD",
+  "tags": "",
+  "route": "CraftMine",
+  "source": "main/Rocket-League/index.html",
+  "type": "html",
+  "width": "1000px",
+  "height": "625px",
+  "listed": true
+},
+{
   "title": "Creative Kill Chamber",
   "description": "TBD",
   "tags": "",
